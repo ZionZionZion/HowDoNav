@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Form</title>
+    <!--
+      
+         Filename:
+      
+         Author:   
+         Date:     
+        
+      -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="modernizr.custom.40753.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Dosis" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Arvo" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+</head>
+
+<body>
+    <div class="container">
+        <p class="skipnavigation">
+            <a href="#contentstart">Skip navigation</a>
+        </p>
+        <header>
+            <div>
+                <img id="logo" src="images/finallogo.svg" alt="logo">
+            </div>
+            <nav class="sitenavigation">
+                <div class="navigation-menu-button">
+                    <img class="hamburger-icon" src="images/menu.png">
+                    <!--Add custom hamburger-->
+                </div>
+                <ul>
+                    <a class="black" href="index.html">
+                        <li>
+                            <img id="navigation-text-icon" src="images/homeico.png" alt="home-icon"> Home
+                        </li>
+                    </a>
+                    <a class="red" href="games.html">
+                        <li>
+                            <img id="navigation-text-icon" src="images/gameico.png" alt="game-icon"> Games
+                        </li>
+                    </a>
+                    <a class="blue" href="anime.html">
+                        <li>
+                            <img id="navigation-text-icon" src="images/animeico.png" alt="anime-icon"> Anime
+                        </li>
+                    </a>
+                    <a class="green" href="books.html">
+                        <li>
+                            <img id="navigation-text-icon" src="images/bookico.png" alt="book-icon"> Books
+                        </li>
+                    </a>
+                </ul>
+            </nav>
+        </header>
+        <form action="results.html">
+            <fieldset class="contactinfo">
+                <legend>Contact information</legend>
+                <label for="firstnameinput">
+                    First Name*:
+                    <input type="text" name="firstname" id="firstnameinput" placeholder="First name" required>
+                </label>
+                <label for="lastnameinput">
+                    Last Name*:
+                    <input type="text" name="lastname" id="lastnameinput" placeholder="Last name" required>
+                </label>
+                <label for="emailinput">
+                    Email*:
+                    <input type="email" name="email" id="emailinput" placeholder="address@example.com" required>
+                </label>
+                <label for="phoneinput">
+                    Phone no.:
+                    <input type="text" name="phone" id="phoneinput" placeholder="Phone no.(optional)">
+                </label>
+                <label for="ageinput">
+                    Age*:
+                    <input type="number" name="age" id="ageinput" placeholder="Age" required>
+                </label>
+
+            </fieldset>
+
+            <fieldset class="contactmethod">
+                <legend>Preferred contact method</legend>
+                <label for=email>
+                    <input type="radio" name="preferred-contact-method" id="email" value="Email" checked> Email
+                </label>
+                <label for="phone">
+                    <input type="radio" name="preferred-contact-method" id="phone" value="Phone"> Phone
+                </label>
+                <label for="either">
+                    <input type="radio" name="preferred-contact-method" id="either" value="Either"> Either
+                </label>
+            </fieldset>
+
+            <fieldset class="genres">
+                <legend>Genre(s) of interest</legend>
+                <ul>
+                    <li>Games</li>
+                    <label for="RPG">
+                        <input type="checkbox" name="genre" id="rpg" value="RPG"> RPG
+                    </label>
+                    <label for="Open world">
+                        <input type="checkbox" name="genre" id="open-world" value="Open world"> Open world
+                    </label>
+                    <label for="Adventure">
+                        <input type="checkbox" name="genre" id="adventure" value="Adventure"> Adventure
+                    </label>
+                    <label for="First-Person shooter">
+                        <input type="checkbox" name="genre" id="first-person shooter" value="First-Person shooter"> First-Person shooter
+                    </label>
+                    <label for="MMO">
+                        <input type="checkbox" name="genre" id="MMO" value="MMO"> Massively multiplayer online(MMO)
+                    </label>
+                    <label for="Horror">
+                        <input type="checkbox" name="genre" id="shortfiction" value="horror"> Horror
+                    </label>
+
+                    <li>Anime</li>
+                    <label for="Adventure">
+                        <input type="checkbox" name="genre" id="adventure" value="Adventure"> Adventure
+                    </label>
+                    <label for="Psychological">
+                        <input type="checkbox" name="genre" id="psychological" value="Psychological"> Psychological
+                    </label>
+                    <label for="Shounen">
+                        <input type="checkbox" name="genre" id="shounen" value="Shounen"> Shounen
+                    </label>
+                    <label for="Romance">
+                        <input type="checkbox" name="genre" id="romance" value="Romance"> Romance
+                    </label>
+                    <label for="Drama">
+                        <input type="checkbox" name="genre" id="drama" value="Drama"> Drama
+                    </label>
+                    <label for="Action">
+                        <input type="checkbox" name="genre" id="action" value="Action"> Action
+                    </label>
+                    <li>Books</li>
+                    <label for="mystery">
+                        <input type="checkbox" name="genre" id="mystery" value="Mystery"> Mystery
+                    </label>
+
+                    <label for="scifi-fantasy">
+                        <input type="checkbox" name="genre" id="scifi-fantasy" value="Science Fiction/Fantasy"> Science Fiction/Fantasy
+                    </label>
+                    <label for="shortfiction">
+                        <input type="checkbox" name="genre" id="shortfiction" value="Short Fiction"> Short Fiction
+                    </label>
+                    <label for="comic">
+                        <input type="checkbox" name="genre" id="comic" value="Comic/Manga"> Comic/Manga
+                    </label>
+                    <label for="non-fiction">
+                        <input type="checkbox" name="genre" id="non-fiction" value="non-fiction"> Non-Fiction
+                    </label>
+                    <label for="autobiography">
+                        <input type="checkbox" name="genre" id="autobiography" value="autobiography"> Autobiography
+                    </label>
+                    <li>Others</li>
+                    <label for="other">
+                        <input type="checkbox" name="genre" id="other" value="Other (please specify below)"> Other (please specify below)
+                        <div class="others-col-wrap-textarea">
+                            <!--Wrap for responsive-->
+                            <textarea name="comments(others)" placeholder="Others" id="comments"></textarea>
+                        </div>
+                    </label>
+                </ul>
+            </fieldset>
+
+            <fieldset class="additionalinfo">
+                <legend>Additional information</legend>
+                <label for="comments">
+                    <p>Any related recommendation you would like us to do for the website ?</p>
+                    <div class="col-wrap-textarea">
+                        <!--Wrap for responsive-->
+                        <textarea name="comments" placeholder="Comments may be considered for future improvement" id="comments"></textarea>
+                    </div>
+                    </textarea>
+                </label>
+                <label for="comments">
+                    <p>Any feedback or question you want to tell us ?</p>
+                    <div class="col-wrap-textarea">
+                        <!--Wrap for responsive-->
+                        <textarea name="comments" placeholder="Reply not guarantee" id="comments"></textarea>
+                    </div>
+                    </textarea>
+            </fieldset>
+
+            <fieldset class="submitbutton">
+                <input type="submit" id="submit" value="Submit">
+            </fieldset>
+            <p class="require">(*)required</p>
+        </form>
+        <footer>
+            <ul>
+                <li>
+                    <a href="https://steamcommunity.com/profiles/76561198086828553/">Steam account</a>
+                </li>
+                <li>
+                    <a href="credit.html">Credit</a>
+                </li>
+            </ul>
+        </footer>
+        <button id="myBtn" title="Go to top">
+            <a href="#logo">
+                <img src="images/arrowupicon.png" alt="go-up">
+            </a>
+        </button>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>

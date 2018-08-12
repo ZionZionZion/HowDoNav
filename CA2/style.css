@@ -1,0 +1,715 @@
+
+
+/* reset style */
+html{
+    font-size:18px;
+    width:100%;
+}
+
+* {
+   border: 0;
+   padding: 0;
+   margin: 0;
+}
+
+ul {
+    list-style-type: none;
+ }
+
+img{
+    max-width:100%;
+    height:auto;
+    width:auto;
+}
+
+ /*body and container */
+body{
+    background-color: rgb(189, 189, 189);
+    max-height:2000px; /* delete it */
+    margin:auto;
+    font-family: 'News Cycle', sans-serif;
+    font-family: 'Dosis', sans-serif;
+ }
+
+p.skipnavigation a {
+    position: absolute;
+    left: -10000px;
+ }
+
+ p.skipnavigation a:focus {
+    left: 0.4em;
+    top: 0.4em;
+    background-color: white;
+    color: black;
+ }
+
+ /*Header with navigation */
+
+
+ header{
+     height:64px;
+     background-color: rgb(227, 227, 227);
+     position: sticky;
+ }
+
+ #logo{
+     width:55px;
+     padding-top:3px;
+     padding-left:5px;
+     position: absolute;
+ }
+
+ #navigation-text-icon{
+    width: 40px;
+}
+
+.navigation-menu-button{
+    text-align: right;
+    display: none;
+    position: absolute;
+    right: 0;
+}
+
+#close{
+    text-align: right;
+    display: none;
+    position: relative;
+    right: 0;
+}
+
+.sitenavigation ul{
+     width:100%;
+     text-align: right;
+     padding-top:35px;
+     display:none;
+ }
+
+ .sitenavigation li{
+     display: inline;
+     font-family: 'Arvo', serif;
+     font-size: 20px;
+     margin:20px;
+ }
+
+
+ .black, .red , .blue , .green{
+     color: rgb(48, 48, 48);
+ }
+ 
+ a{
+    text-decoration: none;
+}
+
+ a:hover{
+     color: white;
+ }
+
+a:active{
+    color: black;
+}
+
+a:focus{
+    color: white;
+}
+
+.wrapper{
+    overflow: hidden;
+}
+
+.fotorama{
+    background-color: rgb(227, 227, 227);
+}
+
+#name{
+    font-family: 'Arvo', serif;
+    font-size: 30px;
+    letter-spacing: -2px;
+    color: rgb(219, 219, 219);
+}
+
+.quote{
+    font-size: 25px;
+    color: rgb(190, 190, 190);
+}
+
+.About-me-button{
+    width:100px;
+    height: auto;
+    font-size: 18px;
+    font-family:"Arvo",serif; /* change later */
+    border:solid 1px rgb(211, 211, 211);
+    margin:auto;
+    margin-top:50px;
+}
+
+.About-me-button:hover{
+    background-color: rgb(189, 189, 189);
+}
+
+.About-me-button a{
+       font-weight: 100;
+       letter-spacing: -1px;
+       color: rgb(202, 202, 202); 
+}
+
+.About-me-button a:hover{
+    color: black;
+}
+
+.black-box{
+    background-color: rgba(0, 0, 0, 0.5);
+    text-align: center;
+    position: relative;
+    height: 0px;
+    padding-top: 547px;
+    padding-bottom: 180px;
+    margin-left:55%;
+    margin-top: -767px;
+    z-index: 2;
+    display: none;
+}
+
+#hobby-quote{
+    text-align: center;
+    font-size: 20px;
+    letter-spacing: 1px;
+    background-color: rgb(227, 227, 227);
+    color: rgb(82, 82, 82);
+    padding-top:10px;
+    padding-bottom:10px;
+    display: none;
+}
+
+article{
+    text-align: center;
+    background-color: white;
+}
+
+.About-me {
+    padding-bottom: 30px;
+    
+}
+
+.introduction , .website-aim, .hobbies-story , .review-article{
+    max-width: 800px;
+    padding-bottom: 40px;
+    padding-top:20px;
+    margin: auto;
+}
+
+h1 ,h5 ,h6{
+    font-size: 28px;
+    padding-left: 20px;
+    font-family: 'Arvo', serif;
+}
+
+.introduction p,.website-aim p, .hobbies-story p {
+    padding-top: 10px;
+    padding-left:70px;
+    padding-right:60px;
+    text-align: justify;
+    line-height: 1.7em;
+    word-spacing: 1px;
+}
+
+
+#hobbies-likes-dislikes{
+    margin-top: -10px;
+    width:80%;
+    height: auto;
+    background-color: rgb(255, 255, 255);
+    display:grid;
+    grid: auto / 33.3% auto 33.3%;
+    padding-bottom:20px;
+    margin: auto;
+   }
+
+.border-section{
+    border-left: solid  1px rgb(227, 227, 227);
+    border-right: solid  1px rgb(227, 227, 227);
+}
+
+#hobbies-likes-dislikes h2,h3,h4{
+    padding-top: 10px;
+    text-align: center;
+    font-size: 24px;
+    font-family: 'Arvo', serif;
+}
+
+#hobbies-likes-dislikes ul{
+    padding-bottom: 20px;
+}
+#hobbies-likes-dislikes ul li{
+    list-style-image: url('images/list-style-image.png');
+    margin: 10px;
+    margin-left: 40px;
+    padding-left: 10px; /* take note */
+    text-align: left;
+    font-size: 16px;
+}
+
+#myBtn {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 30px;
+    z-index: 99;
+    font-size: 18px;
+    border: none;
+    outline: none;
+    background-color: rgba(131, 131, 131, 0.6);
+    color: white;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+
+  #myBtn:hover {
+    background-color: rgba(85, 85, 85,0.6);
+  }
+
+.contact-me{
+    text-align: center;
+    padding-bottom: 20px;
+    padding-top: 20px;
+    background-color: rgb(227, 227, 227); 
+}
+
+.contact-me img{
+      width: 90px;
+      margin: auto;
+}
+
+.get-in-touch{
+      font-size: 30px;
+      font-family: 'Arvo', serif;
+      color: rgb(59, 59, 59);
+}
+
+.opinion{
+      font-size: 24px;
+      color: rgb(97, 97, 97)
+}
+
+.form-button{
+      margin-top: 15px;
+      padding-right: 20px;
+      padding-left: 20px;
+      padding-top: 10px;
+      padding-bottom: 10px;
+      background-color: rgb(44, 44, 70);
+}
+
+
+.form-button a{
+      color: rgb(255, 255, 255);
+      font-size: 16px;
+}
+
+
+footer{
+      padding: 20px;
+      padding-bottom: 20px;
+      background-color: rgb(63, 63, 63);
+  }
+
+footer ul li{
+      padding-left: 20px;
+      color: white;
+      display: inline-block;
+      margin-right:100px;
+      margin-bottom: 12px;
+}
+
+footer ul li a {
+    color: white;
+}
+
+footer ul li a:hover {
+    color: rgb(221, 221, 221);
+}
+
+footer ul li a:active {
+    color: rgb(221, 221, 221);
+}
+
+/* game , anime , books */
+.review-article{ 
+    background-color: white;
+    padding: 20px;
+    padding-top:50px;
+    padding-bottom: 20px;
+
+    border-bottom: solid  1.5px rgb(184, 184, 184);
+}
+
+.review-article h1 , .review-article h2, .review-article h3{
+    text-align: left;
+    padding-left: 0;
+    padding: 10px;
+    font-weight:500;
+    font-family: 'Arvo' , serif;
+} 
+
+.review-article .float-image{
+    float: left;
+    width: 55%;
+    margin-right:25px;
+    margin-bottom:15px;
+    padding-bottom: -10px;
+}
+
+.review-article p {
+    margin-left: 10px;
+    line-height: 1.6em;
+}
+
+
+/* FORM */
+  form{
+      font-family: 'Arvo', serif;
+      max-width: 800px;
+      max-height: 3000px;
+      padding: 30px;
+      margin: auto;
+      margin-bottom: 60px;
+      margin-top: 20px;
+      background-color: white;
+  }
+
+  legend{
+      font-size: 26px;
+      margin-bottom: 30px;
+  }
+  
+  label {
+    font-family: 'Dosis', sans-serif;
+  }
+
+  fieldset{
+      padding-bottom:30px;
+  }
+
+  input[type=text] , input[type=email],input[type=tel], input[type=number]{
+      width: 100%;
+      padding: 10px ;
+      margin: 8px 0;
+      display: inline-block; /* see */
+      border-radius: 4px;
+      border: 2px solid rgb(182, 182, 182);
+      box-sizing: border-box;
+      outline: none;
+  }
+
+  input[type = text]:focus,input[type = email]:focus,input[type=tel]:focus {
+    border: 2px solid rgb(110, 110, 110);
+    background-color: rgb(241, 241, 241);
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+  }
+
+  input[type=number], select{
+    width: 100%;
+    padding: 10px;
+    margin: 8px 0;
+    box-sizing: border-box;  
+  }
+
+
+
+  .contactmethod label{
+    margin-right:100px;
+  }
+  .genres legend{
+    margin-bottom: 10px;
+  }
+  .genres label{
+      margin-left: 0.2em;
+      margin-top:20px;
+      display: block;
+      position: relative;
+      padding-left:20px;
+      color: rgb(73, 73, 73);
+  }
+  .genres ul{
+      margin-left:20px;
+  }
+  .genres li{
+      margin-top: 20px;
+      font-size: 20px;
+      color: rgb(46, 46, 46);
+  }
+
+  .additionalinfo p{
+      width: 80%;
+      margin-bottom: 10px;
+  }
+
+  .others-col-wrap-textarea{
+    margin-top:20px;
+  }
+ 
+  .col-wrap-textarea, .others-col-wrap-textarea{
+      max-width: 700px;
+      height: 150px;
+      margin-bottom: 40px;
+  }
+
+  textarea{
+    font-family: 'Dosis', sans-serif;
+    width: 90%;
+    height: 100%;
+    border: 1px solid;
+    border-radius: 2px;
+    padding: 10px;
+  }
+
+  .submitbutton, #submit{
+    background-color: rgb(44, 44, 70);
+    color: rgb(255, 255, 255);
+    width: 100px;
+    padding-bottom: 5px;
+    padding-top: 5px;
+    margin: auto;
+    cursor: pointer;
+  }
+
+.require{
+    color: rgb(138, 138, 138);
+    font-size: 14px;
+}
+
+
+/* result.html */
+#contentstart{
+    max-width:60%;
+    min-width: 80%;
+    margin:40px auto;
+    padding-bottom: 40px;
+    padding: 20px;
+}
+
+#contentstart .container h2, #contentstart .container h3{
+    font-family: 'Arvo', serif;
+    text-align: left;
+    padding-left: 10px;
+}
+
+#contentstart .container h3{
+    padding-left:30px;
+    margin-bottom: 20px;
+}
+
+#contentstart .container p{
+    font-family: 'Dosis', sans-serif;
+    text-align: left;
+    padding-left: 50px;
+    padding-top: 10px;
+}
+
+/* credit.html */
+
+.creditinfo{
+    max-width: 40%;
+    min-width: 80%;
+    margin: 10px auto;
+    padding: 40px;
+    background-color: rgb(255, 255, 255);
+}
+
+.creditinfo h1{
+    text-align: center;
+}
+
+.creditinfo p{
+    margin-top: 10px;
+    font-size: 20px;    
+}
+
+
+@media screen and (max-width:500px){
+    .review-article .float-image{
+        width: 100%;
+    }
+    .review-article p{
+       margin: auto;
+    }
+
+    footer ul li{
+        display: block;
+    }
+
+}
+
+@media screen and (max-width:715px){
+    .review-article p{
+        text-align: start;
+    }
+
+    .contact-me{
+        text-align: left;
+        padding-left: 20px;
+    }
+
+    .contact-me img{
+        display: none;
+    }
+
+    .navigation-menu-button{
+        display: initial;
+    }
+
+    .introduction p , .website-aim p, .hobbies-story p{
+        padding-left:40px;
+        padding-right:30px;
+        text-align: left;
+    }
+
+    #hobbies-likes-dislikes{
+        display:block;
+       }
+       .border-section{
+           border-left:none;
+           border-right: none;
+           border-bottom: solid 1px rgb(227, 227, 227);
+       }
+
+    #hobbies-likes-dislikes h2,h3,h4{
+        padding-left:10px;
+        padding-top: 10px;
+    }
+
+    #hobbies-likes-dislikes ul li{
+        padding-left:30px;
+    }
+
+    form{
+        margin-bottom: 0px;
+        margin-top: 0px;
+    }
+
+    .contactmethod label{
+        display: block;
+        padding-bottom: 20px;
+    }
+
+    header{
+        padding: 0;
+        z-index: 1;
+    }
+
+    .sitenavigation ul{
+        background-color: rgb(227, 227, 227); 
+        width: 100%;
+    }
+
+    .sitenavigation ul li{
+        display: block;
+        text-align: center;
+        margin-left:0px;
+        padding-top:5px;
+        padding-bottom: 20px;
+    }
+
+
+}
+
+ /*Larger phone*/
+ @media screen and (min-width:715px){
+
+    header{
+        height: 100px;
+    }
+
+    #logo{
+        padding-top:10px;
+        padding-left:25px;
+        width:80px;
+    }
+
+    .sitenavigation ul{
+        display:inherit;
+    }
+
+    .sitenavigation li{
+        font-size: 16px;
+    }
+
+    .review-article p {
+        text-align: justify;
+    }
+ }
+
+ @media screen and (min-width:900px){
+
+    .sitenavigation li{
+        font-size: 20px;
+    }
+    
+    .black-box{
+        display: inherit;
+    }
+
+
+    #hobby-quote {
+        display: inherit;
+    }
+
+
+    #navigation-text-icon{
+        width:50px;
+    }
+ }
+
+ /*Tablet*/
+ @media screen and (min-width:1100px){
+
+    .sitenavigation ul{
+        width: 95%;
+    }
+
+    .sitenavigation li{
+        font-size:25px;
+    }
+
+    #logo{
+        padding-top:5px;
+        width: 100px;
+    }
+
+    div #Quo p{
+        display: inherit;
+    }
+
+ }
+
+
+ /*laptop*/
+ @media screen and (min-width:1280px){
+
+    .sitenavigation ul{
+         width: 92%;
+     }
+
+     .sitenavigation li{
+         font-size:30px;
+     }
+
+     #logo{
+        width: 100px;
+    }
+    
+
+ }
+/*PC*/
+ @media screen and (min-width:1500px){
+    .container{
+        width: 1500px;
+        margin:auto;
+    }
+
+ }
+
+/* Try when time alllows */
+ .introduction h1{
+ 
+ }
